@@ -1,8 +1,8 @@
 ## -----------------------------------------------------------------
-if SHIELD_SOFLE_DONGLE
+if SHIELD_LOTUS58_DONGLE
 
 config ZMK_KEYBOARD_NAME
-    default "Sofle"
+    default "Lotus58"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
@@ -25,16 +25,16 @@ config ZMK_STUDIO_LOCKING
 config ZMK_SLEEP
     default n
     
-endif ## SHIELD_SOFLE_DONGLE
+endif ## SHIELD_LOTUS58_DONGLE
 ## -----------------------------------------------------------------
-if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
+if SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default n
 
-endif ## SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
+endif ## SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT
 ## -----------------------------------------------------------------
-if SHIELD_SOFLE_DONGLE || SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
+if SHIELD_LOTUS58_DONGLE || SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT
 
 config ZMK_BLE
     default y
@@ -90,5 +90,5 @@ config WS2812_STRIP
 
 endif ## ZMK_RGB_UNDERGLOW
 ## ------------------
-endif ## SHIELD_SOFLE_DONGLE || SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
+endif ## SHIELD_LOTUS58_DONGLE || SHIELD_LOTUS58_LEFT || SHIELD_LOTUS58_RIGHT
 ## -----------------------------------------------------------------
