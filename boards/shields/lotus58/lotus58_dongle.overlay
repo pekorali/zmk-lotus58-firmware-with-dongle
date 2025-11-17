@@ -1,6 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 
-#include <lotus58-layouts.dtsi>
+#include "lotus58-layouts.dtsi"
 
 &physical_layout_0 {
     transform = <&default_transform>;
