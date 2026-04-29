@@ -13,23 +13,23 @@
 #
 ---
 include:
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: lotus58_left
     artifact-name: lotus58_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: lotus58_right
     artifact-name: lotus58_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
 
-  - board: nice_nano_v2
+  - board: nice_nano
     # shield: sofle_dongle nice_view_adapter nice_view azoteq_adapter_left
     shield: lotus58_dongle
     snippet: studio-rpc-usb-uart
     artifact-name: lotus58_dongle
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
 
-  - board: nice_nano_v2
+  - board: nice_nano
     shield: settings_reset
     
